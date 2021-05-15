@@ -12,7 +12,7 @@ def move_backwards():
 def move_counter_clockwise():
 	tim.circle(120,180)
 
-def left():
+def lef():
 	tim.left(45)
 
 def right():
@@ -22,7 +22,7 @@ def clear():
 	tim.clear()
 	tim.penup()
 	tim.home()
-	tim.pendown()
+	tim.clear()
 
 screen.listen()
 screen.onkey(key="w", fun=move_forwards)
@@ -31,6 +31,5 @@ screen.onkey(key="a", fun=move_counter_clockwise)
 screen.onkey(key="l", fun=left)
 screen.onkey(key="r", fun=right)
 screen.onkey(key="c", fun=clear)
-
 
 screen.exitonclick()
